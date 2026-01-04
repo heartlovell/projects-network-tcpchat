@@ -67,6 +67,3 @@ In the diagram below, given the sequence of socket API calls and data flow for T
 git clone https://github.com/yourusername/projects-network-tcpchat.git
 ```
 
-
-
-If a client disconnects → server detects → removes the client → bro
