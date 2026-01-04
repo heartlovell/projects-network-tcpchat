@@ -18,8 +18,8 @@ This repository showcases my **Python TCP chat project**, focusing on practical 
 ## Sockets
 Sockets and the socket API are used to send messages across a network. They provide a form of inter-process communication (IPC). The network can be a logical, local network to the computer, or one that’s physically connected to an external network, with its own connections to other networks. The obvious example is the Internet, which you connect to via your ISP.
 
-<img src="https://github.com/user-attachments/assets/1f6bcbae-c782-4d4f-a04e-7a396006de1c" width="300" />
-Image Credit:Real Python
+<img align="center" height=300px src=https://github.com/IamLucif3r/Chat-On/blob/main/assets/Python-Sockets-Tutorial_Watermarked.webp> <br>
+Image Credit:[Real Python](https://realpython.com/python-sockets/)
 
 
 ## TCP Socket
