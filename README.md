@@ -24,7 +24,8 @@ Image Credit:[Real Python](https://realpython.com/python-sockets/)
 
 ## TCP Socket
 In the diagram below, given the sequence of socket API calls and data flow for TCP:
-<img src="https://github.com/user-attachments/assets/1f6bcbae-c782-4d4f-a04e-7a396006de1c" width="300" height="338" />
+
+<img align="center" src=https://github.com/IamLucif3r/Chat-On/blob/main/assets/Screenshot%20at%202021-05-21%2010-47-40.png height=500px>
 
 
 
