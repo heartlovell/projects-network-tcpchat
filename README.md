@@ -1,4 +1,4 @@
-# 🖥 Python TCP Chat
+#🐍 🖥 Python TCP Chat Room
 **A multi-client chat application built with Python using TCP sockets.**  
 Clients can connect, pick a nickname, and chat in real-time. Demonstrates **TCP/IP networking, multithreading, and network debugging**.
 
