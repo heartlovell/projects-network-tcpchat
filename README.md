@@ -1,91 +1,53 @@
-🖥 Python TCP Chat
+# 🖥 Python TCP Chat
+**A multi-client chat application built with Python using TCP sockets.**  
+Clients can connect, pick a nickname, and chat in real-time. Demonstrates **TCP/IP networking, multithreading, and network debugging**.
 
-A multi-client chat application built in Python using TCP sockets.
-Clients can connect to the server, pick a nickname, and chat in real-time. This project demonstrates TCP/IP networking, client-server architecture, multithreading, and network debugging.
+---
 
-About This Project
+## About This Project
+This repository showcases my **Python TCP chat project**, focusing on practical applications of **network protocols, socket programming, and client-server communication**. This project highlights my ability to **design, implement, and debug network applications**, handle multiple clients concurrently, and manage real-time messaging.
 
-This project was created to explore the fundamentals of network programming. It highlights:
+---
 
-How a TCP server can manage multiple client connections concurrently.
+## Project Details
 
-How clients can send and receive messages in real-time.
+| Project | Description | Key Technologies |
+|---------|-------------|----------------|
+| **Python TCP Chat** | Multi-client chat application with nickname management, real-time messaging, and handling client disconnects gracefully. Solved networking issues like `WinError 10049`. | Python, socket, threading, TCP/IP |
 
-How to implement error handling to manage client disconnects gracefully.
+---
 
-Skills in Python socket programming and threaded programming.
+## Features
 
-How the Chat Works
-Component	Description
-Server	Listens for client connections, asks for a nickname, and broadcasts messages to all connected clients. Uses threads to handle each client separately.
-Client	Connects to the server, sends the nickname, and can send/receive messages. Uses two threads: one for sending and one for receiving messages to avoid blocking.
-Networking	Uses TCP sockets (SOCK_STREAM) for reliable communication. The server binds to a host and port, while clients connect to that address.
-Multithreading	Each client runs in its own thread on the server, so multiple clients can chat simultaneously.
-Error Handling	The server detects when a client disconnects unexpectedly, removes it from the list, and broadcasts a "left the chat" message.
-Key Features
+- Multi-client chat support  
+- Nickname registration for each client  
+- Real-time message broadcasting to all connected clients  
+- Threaded server for handling multiple clients simultaneously  
+- Graceful error handling and client disconnect detection  
 
-Multi-client support: Multiple clients can chat at the same time.
+---
 
-Nickname management: Each client chooses a nickname at connection.
+## Skills Demonstrated
 
-Message broadcasting: Every message is sent to all connected clients.
+- TCP/IP socket programming in Python  
+- Client-server architecture  
+- Multithreading for concurrent client connections  
+- Network debugging (e.g., WinError 10049)  
+- Real-time messaging application design  
 
-Threading: Server uses threads for concurrent client handling; clients use threads for simultaneous sending/receiving.
+---
 
-Error handling: Detects client disconnects and network errors (e.g., WinError 10049).
+## Screenshots / GIFs
 
-Technical Details
-Server Workflow
+> Add images or GIFs to showcase your chat application. Replace the placeholders with your screenshots.
 
-Create a TCP socket and bind it to a host and port.
+![Python TCP Chat](screenshots/chat.png)  
+*Python TCP Chat running with multiple clients.*
 
-Listen for incoming client connections.
+---
 
-When a client connects:
+## How to Run
 
-Ask for a nickname.
-
-Add the client socket and nickname to tracking lists.
-
-Broadcast a "joined the chat" message.
-
-Start a new thread to handle this client’s messages.
-
-Each client thread:
-
-Receives messages from the client.
-
-Broadcasts messages to all other clients.
-
-Handles disconnects by removing the client and broadcasting a "left the chat" message.
-
-Client Workflow
-
-Connect to the server using the server's host and port.
-
-Send nickname when prompted.
-
-Run two threads:
-
-Receive thread: Continuously receives messages from the server and prints them.
-
-Write thread: Takes user input and sends it to the server.
-
-Skills Demonstrated
-
-TCP/IP socket programming in Python.
-
-Client-server architecture design.
-
-Multithreading for concurrent connections.
-
-Network debugging and handling disconnects (WinError 10049).
-
-Building a real-time interactive application.
-
-Example Output / Screenshots
-
-Add screenshots or GIFs of your chat application running:
-
-
-Example of two clients chatting in real-time.
+1. **Clone the repository:**  
+```bash
+git clone https://github.com/yourusername/projects-network-tcpchat.git
