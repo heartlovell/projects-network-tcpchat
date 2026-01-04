@@ -2,8 +2,7 @@ import socket
 import threading
 
 # Server settings
-ip = input("Enter your ip: ")
-Host = ip # server address
+Host='127.0.0.1'
 Port = 12345        # server port
 
 
@@ -41,4 +40,5 @@ receive_thread = threading.Thread(target=receive)
 receive_thread.start()
 
 write_thread = threading.Thread(target=write)
+
 write_thread.start()
